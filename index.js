@@ -27,7 +27,7 @@ const server = http.createServer((req, res) => {
 
             
 
-                  //    // red file ays 
+              //    // red file ays 
 
                   //      fs.readFile('Home.html', (error, data) => {
                   //            res.writeHead(200, {'content-type':'text/html'});
@@ -39,7 +39,7 @@ const server = http.createServer((req, res) => {
 
 
 
-                     // write file ays way
+            // write file ays way
 
                   //     fs.writeFile('demo.text','hello world', (error) => {
                   //               if(error){
@@ -54,19 +54,33 @@ const server = http.createServer((req, res) => {
                   //     })
 
 
-                  //write file sync way
+             //write file sync way
 
-                      let error = fs.writeFileSync('demoSync.html', 'welcome to file sync');
-                      if(error){
-                               res.writeHead(200, {'content-type' : 'text/html'})
-                               res.write('file write sync way fail');
-                               res.end()
-                      }else{
-                               res.writeHead(200, {'content-type':'text/html'})
-                               res.write('file write sync way success');
-                               res.end()
-                      }
+                     //  let error = fs.writeFileSync('demoSync.html', 'welcome to file sync');
+                     //  if(error){
+                     //           res.writeHead(200, {'content-type' : 'text/html'})
+                     //           res.write('file write sync way fail');
+                     //           res.end()
+                     //  }else{
+                     //           res.writeHead(200, {'content-type':'text/html'})
+                     //           res.write('file write sync way success');
+                     //           res.end()
+                     //  }
                   
+
+             // file rename ays way 
+             
+            //  fs.rename('Home.html', 'about.html', (error) => {
+            //         if(error){
+            //                res.writeHead(200, {'content-type': 'text/html'});
+            //                res.write('file rename fail');
+            //                res.end();
+            //         }else{
+            //                res.writeHead(200, {'content-type': 'text/html'});
+            //                res.write('file rename success');
+            //                res.end();
+            //         }
+            //  })
 
 
       
